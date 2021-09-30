@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Http;
 class infoController extends Controller
 {
     public function index(){
-      
+      $response3 = Http::get('https://apicovid19indonesia-v2.vercel.app/api/indonesia');
+      $data3 = $response3->json();
+
+      $response4 = Http::get('https://vaksincovid19-api.vercel.app/api/vaksin');
+      $data4 = $response4->json();
+      return view('index', compact('data3', 'data4'));
     }
 
     public function pageina(){

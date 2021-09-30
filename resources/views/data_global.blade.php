@@ -15,9 +15,9 @@
 		      <th scope="col">#</th>
 		      <th scope="col">Provinsi</th>
 		      <th scope="col">Jumlah Kasus</th>
-		      <th scope="col">Jumlah Meninggal</th>
+		      <th scope="col">Jumlah Meninggal</th><!-- 
 		      <th scope="col">Jumlah Sembuh</th>
-		      <th scope="col">Kasus Aktif</th>
+		      <th scope="col">Kasus Aktif</th> -->
 		    </tr>
 		  </thead>
 		  <tbody>
@@ -27,9 +27,9 @@
 			      	<th scope="row">{{$no++}}</th>
 			      	<td>{{ $data['attributes']['Country_Region']}}</td>
 			      	<td>{{ $data['attributes']['Confirmed']}}</td>
-			      	<td>{{ $data['attributes']['Deaths']}}</td>
+			      	<td>{{ $data['attributes']['Deaths']}}</td><!-- 
 			      	<td>{{ $data['attributes']['Recovered']}}</td>
-			      	<td>{{ $data['attributes']['Active']}}</td>
+			      	<td>{{ $data['attributes']['Active']}}</td> -->
 			    </tr>
 		   	@endforeach
 		  </tbody>

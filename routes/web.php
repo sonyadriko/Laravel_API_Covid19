@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', 'infoController@index');
-Route::view('/','index')->name('dashboard');
+// Route::view('/','index')->name('dashboard');
+Route::get('/', 'infoController@index');
 
 Route::get('/data_ina', 'infoController@pageina');
 
