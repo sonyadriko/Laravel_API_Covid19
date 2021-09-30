@@ -9,32 +9,22 @@
 <body>
 
 	<div class="container">
-		<table class="table">
-		  <thead class="thead-dark">
-		    <tr>
-		      <th scope="col">#</th>
-		      <th scope="col">Provinsi</th>
-		      <th scope="col">Jumlah Kasus</th>
-		      <th scope="col">Jumlah Meninggal</th>
-		      <th scope="col">Jumlah Sembuh</th>
-		      <th scope="col">Kasus Aktif</th>
-
-		    </tr>
-		  </thead>
-		  <tbody>
-		  	@php $no = 1 @endphp
-		   	@foreach ($data as $data)
-		   		<tr>
-			      	<th scope="row">{{$no++}}</th>
-			      	<td>{{ $data['provinsi']}}</td>
-			      	<td>{{ $data['kasus']}}</td>
-			      	<td>{{ $data['meninggal']}}</td>
-			      	<td>{{ $data['sembuh']}}</td>
-			      	<td>{{ $data['dirawat']}}</td>
-			    </tr>
-		   	@endforeach
-		  </tbody>
-		</table>
+		<div class="card" style="width: 18rem;">
+	  		<div class="card-body">
+		    	<h5 class="card-title">Data Global</h5>
+		    	<h6 class="card-subtitle mb-2 text-muted">Corona seluruh dunia</h6>
+		    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	<a href="{{url('/data_global')}}" class="card-link">Page Global</a>
+		    	<a href="#" class="card-link">Another link</a>
+			</div>
+			<div class="card-body">
+		    	<h5 class="card-title">Data Indonesia</h5>
+		    	<h6 class="card-subtitle mb-2 text-muted">Corona seluruh Indonesia</h6>
+		    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    	<a href="{{url('/data_ina')}}" class="card-link">Page Indonesia</a>
+		    	<a href="#" class="card-link">Another link</a>
+			</div>
+		</div>
 	</div>
 
 </body>
